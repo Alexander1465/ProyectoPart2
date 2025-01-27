@@ -14,15 +14,15 @@ function Dashboard() {
                         </Grid>
 
                         <Grid size={{xs:12, md:2, lg:2}}>        
-                            <Link to={'/EntrenamientoPierna'} style={{textDecoration:'none', color:'white'}}>Entrenamiento Pierna</Link>
+                            <Link to={'/pierna'} style={{textDecoration:'none', color:'white'}}>Entrenamiento Pierna</Link>
                         </Grid>
  
                         <Grid size={{xs:12, md:3, lg:3}}>        
-                            <Link to={'/EntrenamientoBrazos'} style={{textDecoration:'none', color:'white'}}>Entrenamiento Brazo</Link>
+                            <Link to={'/brazo'} style={{textDecoration:'none', color:'white'}}>Entrenamiento Brazo</Link>
                         </Grid>
 
                         <Grid size={{xs:12, md:3, lg:3}}>        
-                            <Link to={'/EntrenamientoPecho'} style={{textDecoration:'none', color:'white'}}>Entrenamiento Pecho</Link>
+                            <Link to={'/pecho'} style={{textDecoration:'none', color:'white'}}>Entrenamiento Pecho</Link>
                         </Grid>
                                                 
                     </Grid>
