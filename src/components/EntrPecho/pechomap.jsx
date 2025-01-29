@@ -1,8 +1,11 @@
 import React  from 'react'
 import PechoConf from './pechoconf';
+import { useState } from 'react'
+import ComandoVoz from '../voz/ComandoVoz';
 //import '../../App.css';
 
 function PechoMap() {
+  const [ejerciciofavorito, setEjercicioFavorito] = useState(null);
 
   const pe = [
     {
@@ -56,11 +59,14 @@ function PechoMap() {
   ];
 
   return (
-    <div style={{display: 'flex', flexWrap: 'wrap', placeItems: 'center', justifyContent: 'center', alignItems: 'center' 
-      }}>
-    {pe.map((bra) => (
-      <PechoConf key={bra.id} bra={bra} />
-    ))}
+    <div>
+      <ComandoVoz setEjercicioFavorito={setEjercicioFavorito}/>
+      <div style={{display: 'flex', flexWrap: 'wrap', placeItems: 'center', justifyContent: 'center', alignItems: 'center' 
+        }}>
+      {pe.map((bra) => (
+        <PechoConf key={bra.id} bra={bra} setEjercicioFavorito={ejerciciofavorito}/>
+      ))}
+    </div>
   </div>
 );
       

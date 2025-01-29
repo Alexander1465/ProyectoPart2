@@ -9,10 +9,11 @@ import Box from '@mui/material/Box';
 import FavoriteBorderRoundedIcon from '@mui/icons-material/FavoriteBorderRounded';
 import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
 import IconButton from '@mui/material/IconButton';
+import { useEffect } from 'react';
 
 
 
-function PechoConf({ bra }) {
+function PechoConf({ bra, setEjercicioFavorito }) {
     const [isFavorite, setIsFavorite] = useState(false);
     const [cont, setCount] = useState(0)
 
@@ -21,6 +22,12 @@ function PechoConf({ bra }) {
         setIsFavorite(prev => !prev);
         setCount(isFavorite ? cont - 1 : cont + 1)
     };
+
+    useEffect(() => {
+            if ( setEjercicioFavorito === bra.title) {
+                handleIconClickD();
+            }
+        }, [setEjercicioFavorito]);
 
     return (
         <Box>
