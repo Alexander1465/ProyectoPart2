@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Dashboard() {
     return (
-        <AppBar >
+        <AppBar position="static" >
             <Container maxWidth="xl">
                 <Toolbar >
                     <Grid container spacing={1} sx={{ width: '100%' }} >

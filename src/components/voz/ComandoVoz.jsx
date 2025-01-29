@@ -9,8 +9,12 @@ const ComandoVoz = () => {
       command: 'abrir página *',
       callback: (page) => { if (page === 'pecho') {
             window.location.href = '/pecho';
+        }else if (page === 'brazo') {
+          window.location.href = '/brazo';
+        }else if (page === 'pierna') {
+          window.location.href = '/pierna';
         }else {
-            setMessage('No existe la pagina pecho');
+          setMessage('No existe la pagina pecho');
         }
       }
     },
