@@ -5,13 +5,13 @@ import CountDown from "./Tiempo/CountDown"
 import { useState } from "react"
 
 function Inicio() {
-    const [countdownValue, setCountdownValue] = useState(100);
+    const [countdownValue, setCountdownValue] = useState(0);
     return <>
         <Dashboard/>
         <Typography variant="h2">Pagina entrenamiento</Typography>
-        <ComandoVoz />
+        {/*<ComandoVoz setEjercicioFavorito={setCountdownValue} setTiempo={setTiempo} />*/}
+        <ComandoVoz setTiempo={setCountdownValue} />
         <CountDown seconds={countdownValue} setCountdownValue={setCountdownValue} />
-        <ComandoVoz setCountdownValue={setCountdownValue} />
     
 
 </>

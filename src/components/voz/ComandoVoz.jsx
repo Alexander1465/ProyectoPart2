@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
 
-const ComandoVoz = ({setEjercicioFavorito, settiempo}) => {
+const ComandoVoz = ({setEjercicioFavorito, setTiempo}) => {
+
+  
 
   const [message, setMessage] = useState('')
   const commands = [
@@ -19,9 +21,9 @@ const ComandoVoz = ({setEjercicioFavorito, settiempo}) => {
       }
     },
     {
-      command:'me gusta el ejercicio *',
+      command:'me gusta  *',
       callback: (nombreejercicio) => {
-        if(nombreejercicio === "sentadilla con barra"){
+        if(nombreejercicio === "sentadillas con barra"){
           setEjercicioFavorito(nombreejercicio);
         } else if(nombreejercicio === "elevación de gemelos"){
           setEjercicioFavorito(nombreejercicio);
@@ -47,7 +49,7 @@ const ComandoVoz = ({setEjercicioFavorito, settiempo}) => {
         if(ejerciciobrazo === "extensión Tríceps con cuerda en polea alta"){
           setEjercicioFavorito(ejerciciobrazo);
         } else if(ejerciciobrazo === "curl bíceps con barra Z"){
-          setEjercicioFavorito(nombejerciciobrazoreejercicio);
+          setEjercicioFavorito(ejerciciobrazo);
         } else if(ejerciciobrazo === "fondos entre bancos"){
           setEjercicioFavorito(ejerciciobrazo);
         } else if(ejerciciobrazo === "curl martillo alterno"){
@@ -64,12 +66,7 @@ const ComandoVoz = ({setEjercicioFavorito, settiempo}) => {
     {
       command: "reloj de *",
       callback: (num) => {
-        const numero = parseInt(num, 10);
-        if (!isNaN(numero)) {
-          settiempo(numero);
-        } else {
-          setMessage("Número no válido");
-        }
+        setTiempo(num);
       },
     },
     {

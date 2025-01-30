@@ -11,7 +11,7 @@ function PiernaMap() {
     {
       id: 0,
       imgsrc: "src/assets/sky.jpg",
-      title: "sentadilla con barra",
+      title: "sentadillas con barra",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
       alt: "Imagen de sentadilla con barra",
       num: 25

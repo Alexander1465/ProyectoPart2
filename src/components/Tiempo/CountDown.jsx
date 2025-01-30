@@ -26,14 +26,15 @@ export default function CountDown({seconds, setCountdownValue}) {
     useEffect(() => {
         if (countdown <= 0) {
           clearInterval(timerId.current);
+          setCountdown(0)
         }
       }, [countdown]);
 
     useEffect(() => {
         if (setCountdownValue !== undefined) {
-          setCountdown(setCountdownValue);
+          setCountdown(countdown);
         }
-      }, [setCountdownValue]);
+      }, [countdown]);
 
     return (
         <h2>Count Down: {formatTime(countdown)}</h2>
