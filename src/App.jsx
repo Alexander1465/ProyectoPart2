@@ -5,6 +5,7 @@ import Inicio from './components/Inicio'
 import Pierna from './components/Pierna';
 import Brazo from './components/Brazo';
 import Pecho from './components/pecho';
+import Temporizador from './components/Temporizador';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: '/pecho',
         element: <Pecho />
+      },
+      {
+        path: '/temporizador',
+        element: <Temporizador />
       }
     ]
   }

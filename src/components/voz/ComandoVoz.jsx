@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
 
-const ComandoVoz = ({setEjercicioFavorito, setTiempo}) => {
+const ComandoVoz = ({setEjercicioFavorito, setCountdown}) => {
 
   
 
@@ -15,13 +15,15 @@ const ComandoVoz = ({setEjercicioFavorito, setTiempo}) => {
           window.location.href = '/brazo';
         }else if (page === 'pierna') {
           window.location.href = '/pierna';
+        }else if (page === 'temporizador') {
+          window.location.href = '/temporizador';
         }else {
           setMessage('No existe la pagina pecho');
         }
       }
     },
     {
-      command:'me gusta  *',
+      command:'me gusta el ejercicio de pierna *',
       callback: (nombreejercicio) => {
         if(nombreejercicio === "sentadillas con barra"){
           setEjercicioFavorito(nombreejercicio);
@@ -37,9 +39,8 @@ const ComandoVoz = ({setEjercicioFavorito, setTiempo}) => {
           setEjercicioFavorito(nombreejercicio);
         } else if(nombreejercicio === "sentadilla con barra"){
           setEjercicioFavorito(nombreejercicio);
-          setMessage("----------------------------------------------")
         } else {
-          setMessage('No existe ese nombre');
+          setMessage("No existe ese ejercicio de pierna")
         }
       }
     },
@@ -58,17 +59,39 @@ const ComandoVoz = ({setEjercicioFavorito, setTiempo}) => {
           setEjercicioFavorito(ejerciciobrazo);
         } else if(ejerciciobrazo === "curl predicador con barra z"){
           setEjercicioFavorito(ejerciciobrazo);
-          setMessage("----------------------------------------------")
+          
         } else {
+          setMessage("No existe ese ejercicio de brazo")
+        }
+      }
+    },
+    {
+      command:'me gusta el ejercicio de pecho *',
+      callback: (ejerciciobrazo) => {
+        if(ejerciciobrazo === "Press de banca"){
+          setEjercicioFavorito(ejerciciobrazo);
+        } else if(ejerciciobrazo === "Aperturas con mancuernas"){
+          setEjercicioFavorito(ejerciciobrazo);
+        } else if(ejerciciobrazo === "Press de banca inclinado"){
+          setEjercicioFavorito(ejerciciobrazo);
+        } else if(ejerciciobrazo === "Flexiones"){
+          setEjercicioFavorito(ejerciciobrazo);
+        } else if(ejerciciobrazo === "Press floor"){
+          setEjercicioFavorito(ejerciciobrazo);
+        } else if(ejerciciobrazo === "Press de banca con mancuernas"){
+          setEjercicioFavorito(ejerciciobrazo);
+        } else {
+          setMessage("No existe ese ejercicio de pecho")
         }
       }
     },
     {
       command: "reloj de *",
       callback: (num) => {
-        setTiempo(num);
+        setCountdown(num);  
       },
     },
+  
     {
       command: 'borrar',
       callback: ({ resetTranscript }) => resetTranscript()

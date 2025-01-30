@@ -10,50 +10,50 @@ function PechoMap() {
   const pe = [
     {
       id: 0,
-      imgsrc: "src/assets/sky.jpg",
-      title: "Titulo 1",
+      imgsrc: "public/pecho/pressbanca.png",
+      title: "Press de banca",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
-      alt: "Imagen del cielo",
+      alt: "Imagen Press de banca",
       num: 25
     },
     {
       id: 1,
-      imgsrc: "src/assets/sea.jpg",
-      title: "Titulo 2yuvyudiu",
+      imgsrc: "public/pecho/aperturamancuerna.png",
+      title: "Aperturas con mancuernas",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
-      alt: "Imagen del oceano",
+      alt: "Imagen Aperturas con mancuernas",
       num: 16
     },
     {
       id: 2,
-      imgsrc: "src/assets/tux.jpg",
-      title: "Titulo 3",
+      imgsrc: "public/pecho/pressbancainclinado.png",
+      title: "Press de banca inclinado",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
-      alt: "Imagen de i love you y un pinguino",
+      alt: "Imagen Press de banca inclinado",
       num: 169
     },
     {
       id: 3,
-      imgsrc: "src/assets/mario.jpg",
-      title: "Titulo 4",
+      imgsrc: "public/pecho/flexiones.png",
+      title: "Flexiones",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
-      alt: "Image Mario",
+      alt: "Image Flexiones",
       num: 253
     },
     {
       id: 4,
-      imgsrc: "src/assets/kirby.jpg",
-      title: "Titulo 5",
+      imgsrc: "public/pecho/pressfloor.jpg",
+      title: "Press floor",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
-      alt: "Imagen de Kirby",
+      alt: "Imagen Press floor",
       num: 353
     },
     {
       id: 5,
-      imgsrc: "src/assets/zelda.jpeg",
-      title: "Titulo 6",
+      imgsrc: "public/pecho/mancuerna.png",
+      title: "Press de banca con mancuernas",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
-      alt: "Imagen de zelda",
+      alt: "Imagen Press de banca con mancuernas",
       num: 269
     }
   ];

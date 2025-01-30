@@ -1,6 +1,4 @@
-import { useState } from "react"
-import { useRef } from "react"
-import { useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 
 const formatTime = (time) => {
     let minutes = Math.floor(time / 60)
@@ -8,35 +6,35 @@ const formatTime = (time) => {
 
     if (minutes <= 10) minutes = '0' + minutes;
     if (seconds <= 10) seconds = '0' + seconds;
-    return minutes +':'+seconds
+    return minutes + ':' + seconds
 }
 
-export default function CountDown({seconds, setCountdownValue}) {
-    const [ countdown, setCountdown] = useState(seconds)
+export default function CountDown({ seconds, setCountdownValue }) {
+    const [countdown, setCountdown] = useState(seconds)
     const timerId = useRef()
 
     useEffect(() => {
-        timerId.current = setInterval(() =>{
-            setCountdown(prev => prev -1)
-        }, 1000)
-        return () => clearInterval(timerId)
-    }, [])
+        setCountdown(seconds);
+    }, [seconds])  
 
+    useEffect(() => {
+        if (countdown <= 0) return;
+
+        timerId.current = setInterval(() => {
+            setCountdown(prev => prev - 1)
+        }, 1000)
+
+        return () => clearInterval(timerId.current) 
+    }, [countdown]) 
 
     useEffect(() => {
         if (countdown <= 0) {
-          clearInterval(timerId.current);
-          setCountdown(0)
+            clearInterval(timerId.current)
+            setCountdownValue(0)  
         }
-      }, [countdown]);
-
-    useEffect(() => {
-        if (setCountdownValue !== undefined) {
-          setCountdown(countdown);
-        }
-      }, [countdown]);
+    }, [countdown])
 
     return (
-        <h2>Count Down: {formatTime(countdown)}</h2>
+        <h2>Temporizador {formatTime(countdown)}</h2>
     )
 }

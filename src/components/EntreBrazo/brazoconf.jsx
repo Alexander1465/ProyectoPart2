@@ -38,7 +38,7 @@ function BrazoConf({ bra, setEjercicioFavorito }) {
                             <Typography variant="h5">{bra.title}</Typography>
                         </CardActionArea>
                     </CardActionArea>
-                    <CardMedia sx={{ height: 194 }}
+                    <CardMedia sx={{ height: 300 }}
                         component="img"
                         image={bra.imgsrc}
                         alt={bra.alt}
