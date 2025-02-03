@@ -11,7 +11,7 @@ function BrazoMap() {
     {
       id: 0,
       imgsrc: "public/brazo/triceppolea.webp",
-      title: "extensión Tríceps con cuerda en polea",
+      title: "extensión Tríceps con cuerda polea",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
       alt: "Imagen Extensión tríceps con cuerda en polea",
       num: 25
@@ -27,7 +27,7 @@ function BrazoMap() {
     {
       id: 2,
       imgsrc: "public/brazo/fondosentre.jpg",
-      title: "fondos entre bancos",
+      title: "fondos entre banco",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
       alt: "Imagen fondos entre bancos",
       num: 169
@@ -43,7 +43,7 @@ function BrazoMap() {
     {
       id: 4,
       imgsrc: "public/brazo/pressfrance.webp",
-      title: "press francés inclinado con barra z",
+      title: "press francés inclinado con barra Z",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
       alt: "Imagen press francés inclinado con barra Z",
       num: 353
@@ -51,7 +51,7 @@ function BrazoMap() {
     {
       id: 5,
       imgsrc: "public/brazo/barraz.webp",
-      title: "curl predicador con barra z",
+      title: "curl predicador con barra Z",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
       alt: "Imagen de zelda",
       num: 269

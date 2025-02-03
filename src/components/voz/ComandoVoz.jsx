@@ -3,8 +3,6 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 
 const ComandoVoz = ({setEjercicioFavorito, setCountdown}) => {
 
-  
-
   const [message, setMessage] = useState('')
   const commands = [
     {
@@ -17,15 +15,17 @@ const ComandoVoz = ({setEjercicioFavorito, setCountdown}) => {
           window.location.href = '/pierna';
         }else if (page === 'temporizador') {
           window.location.href = '/temporizador';
+        }else if (page === 'Inicio') {
+          window.location.href = '/inicio';
         }else {
-          setMessage('No existe la pagina pecho');
+          setMessage('No existe la pagina');
         }
       }
     },
     {
       command:'me gusta el ejercicio de pierna *',
       callback: (nombreejercicio) => {
-        if(nombreejercicio === "sentadillas con barra"){
+        if(nombreejercicio === "sentadilla con barra"){
           setEjercicioFavorito(nombreejercicio);
         } else if(nombreejercicio === "elevación de gemelos"){
           setEjercicioFavorito(nombreejercicio);
@@ -47,17 +47,17 @@ const ComandoVoz = ({setEjercicioFavorito, setCountdown}) => {
     {
       command:'me gusta el ejercicio de brazo *',
       callback: (ejerciciobrazo) => {
-        if(ejerciciobrazo === "extensión Tríceps con cuerda en polea alta"){
+        if(ejerciciobrazo === "extensión Tríceps con cuerda polea"){
           setEjercicioFavorito(ejerciciobrazo);
         } else if(ejerciciobrazo === "curl bíceps con barra Z"){
           setEjercicioFavorito(ejerciciobrazo);
-        } else if(ejerciciobrazo === "fondos entre bancos"){
+        } else if(ejerciciobrazo === "fondos entre banco"){
           setEjercicioFavorito(ejerciciobrazo);
         } else if(ejerciciobrazo === "curl martillo alterno"){
           setEjercicioFavorito(ejerciciobrazo);
-        } else if(ejerciciobrazo === "press frances inclinado con barra z"){
+        } else if(ejerciciobrazo === "press francés inclinado con barra Z"){
           setEjercicioFavorito(ejerciciobrazo);
-        } else if(ejerciciobrazo === "curl predicador con barra z"){
+        } else if(ejerciciobrazo === "curl predicador con barra Z"){
           setEjercicioFavorito(ejerciciobrazo);
           
         } else {
@@ -68,17 +68,17 @@ const ComandoVoz = ({setEjercicioFavorito, setCountdown}) => {
     {
       command:'me gusta el ejercicio de pecho *',
       callback: (ejerciciobrazo) => {
-        if(ejerciciobrazo === "Press de banca"){
+        if(ejerciciobrazo === "press de banca"){
           setEjercicioFavorito(ejerciciobrazo);
-        } else if(ejerciciobrazo === "Aperturas con mancuernas"){
+        } else if(ejerciciobrazo === "aperturas como mancuernas"){
           setEjercicioFavorito(ejerciciobrazo);
-        } else if(ejerciciobrazo === "Press de banca inclinado"){
+        } else if(ejerciciobrazo === "press de banca inclinado"){
           setEjercicioFavorito(ejerciciobrazo);
-        } else if(ejerciciobrazo === "Flexiones"){
+        } else if(ejerciciobrazo === "flexiones"){
           setEjercicioFavorito(ejerciciobrazo);
-        } else if(ejerciciobrazo === "Press floor"){
+        } else if(ejerciciobrazo === "Press flor"){
           setEjercicioFavorito(ejerciciobrazo);
-        } else if(ejerciciobrazo === "Press de banca con mancuernas"){
+        } else if(ejerciciobrazo === "press de banca con mancuernas"){
           setEjercicioFavorito(ejerciciobrazo);
         } else {
           setMessage("No existe ese ejercicio de pecho")
@@ -86,15 +86,10 @@ const ComandoVoz = ({setEjercicioFavorito, setCountdown}) => {
       }
     },
     {
-      command: "reloj de *",
+      command: "temporizador de *",
       callback: (num) => {
         setCountdown(num);  
       },
-    },
-  
-    {
-      command: 'borrar',
-      callback: ({ resetTranscript }) => resetTranscript()
     }
   ]
 

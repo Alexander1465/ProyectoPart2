@@ -15,12 +15,9 @@ import { useEffect } from 'react';
 
 function PechoConf({ bra, setEjercicioFavorito }) {
     const [isFavorite, setIsFavorite] = useState(false);
-    const [cont, setCount] = useState(0)
-
 
     const handleIconClickD = () => {
         setIsFavorite(prev => !prev);
-        setCount(isFavorite ? cont - 1 : cont + 1)
     };
 
     useEffect(() => {
@@ -52,7 +49,7 @@ function PechoConf({ bra, setEjercicioFavorito }) {
                 <CardActionArea sx={{display:"flex", justifyContent:"left", marginLeft:"10px"}}>
                     <IconButton onClick={handleIconClickD}>
                         {isFavorite ? (
-                            <FavoriteRoundedIcon   sx={{ color: "red" }}/>
+                            <FavoriteRoundedIcon sx={{ color: "red" }}/>
                         ) : (
                             <FavoriteBorderRoundedIcon sx={{ color: "grey" }}/>
                         )}

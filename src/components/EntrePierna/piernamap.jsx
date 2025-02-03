@@ -11,7 +11,7 @@ function PiernaMap() {
     {
       id: 0,
       imgsrc: "public/pierna/sentadilla.webp",
-      title: "sentadillas con barra",
+      title: "sentadilla con barra",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
       alt: "Imagen de sentadilla con barra",
       num: 25
@@ -19,7 +19,7 @@ function PiernaMap() {
     {
       id: 1,
       imgsrc: "public/pierna/gemelos.webp",
-      title: "Elevación de gemelos",
+      title: "elevación de gemelos",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
       alt: "Imagen de elevación de gemelos",
       num: 16
@@ -27,7 +27,7 @@ function PiernaMap() {
     {
       id: 2,
       imgsrc: "public/pierna/curlfemoral.jpg",
-      title: "Curl femoral sentado",
+      title: "curl femoral sentado",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
       alt: "Imagen de curl femoral sentado",
       num: 169
@@ -35,7 +35,7 @@ function PiernaMap() {
     {
       id: 3,
       imgsrc: "public/pierna/sentadillafrontal.jpg",
-      title: "Sentadilla frontal con barra",
+      title: "sentadilla frontal con barra",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
       alt: "Image sentadilla frontal con barra",
       num: 253
@@ -43,7 +43,7 @@ function PiernaMap() {
     {
       id: 4,
       imgsrc: "public/pierna/pesomuerto.webp",
-      title: "Peso muerto",
+      title: "peso muerto",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
       alt: "Imagen peso muerto",
       num: 353
@@ -51,7 +51,7 @@ function PiernaMap() {
     {
       id: 5,
       imgsrc: "public/pierna/sentadillabulgara.jpg",
-      title: "Sentadilla búlgara",
+      title: "sentadilla búlgara",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
       alt: "Imagen sentadilla búlgara",
       num: 269
