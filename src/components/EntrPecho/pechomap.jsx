@@ -11,7 +11,7 @@ function PechoMap() {
     {
       id: 0,
       imgsrc: "public/pecho/pressbanca.png",
-      title: "Press de banca",
+      title: "press de banca",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
       alt: "Imagen Press de banca",
       num: 25
@@ -19,7 +19,7 @@ function PechoMap() {
     {
       id: 1,
       imgsrc: "public/pecho/aperturamancuerna.png",
-      title: "Aperturas con mancuernas",
+      title: "aperturas como mancuernas",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
       alt: "Imagen Aperturas con mancuernas",
       num: 16
@@ -27,7 +27,7 @@ function PechoMap() {
     {
       id: 2,
       imgsrc: "public/pecho/pressbancainclinado.png",
-      title: "Press de banca inclinado",
+      title: "press de banca inclinado",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
       alt: "Imagen Press de banca inclinado",
       num: 169
@@ -35,7 +35,7 @@ function PechoMap() {
     {
       id: 3,
       imgsrc: "public/pecho/flexiones.png",
-      title: "Flexiones",
+      title: "flexiones",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
       alt: "Image Flexiones",
       num: 253
@@ -43,7 +43,7 @@ function PechoMap() {
     {
       id: 4,
       imgsrc: "public/pecho/pressfloor.jpg",
-      title: "Press floor",
+      title: "Press flor",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
       alt: "Imagen Press floor",
       num: 353
@@ -51,7 +51,7 @@ function PechoMap() {
     {
       id: 5,
       imgsrc: "public/pecho/mancuerna.png",
-      title: "Press de banca con mancuernas",
+      title: "press de banca con mancuernas",
       noticia: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odit illum, odio repellendus explicabo unde mollitia aliquid modi saepe officia totam excepturi cupiditate voluptates et cum inventore quis est tenetur?",
       alt: "Imagen Press de banca con mancuernas",
       num: 269

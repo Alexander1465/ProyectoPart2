@@ -34,6 +34,11 @@ const router = createBrowserRouter([
         path: '/temporizador',
         element: <Temporizador />
       }
+      ,
+      {
+        path: '/inicio',
+        element: <Inicio />
+      }
     ]
   }
 ])

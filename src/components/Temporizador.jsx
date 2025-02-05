@@ -8,7 +8,7 @@ function Temporizador() {
     return <>
         <Dashboard/>
         <ComandoVoz setCountdown={setCountdownValue} />
-        <CountDown seconds={countdownValue} setCountdownValue={setCountdownValue} />
+        <CountDown segundos={countdownValue} setCountdownValue={setCountdownValue} />
     </>
 
 
