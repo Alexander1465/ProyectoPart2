@@ -7,8 +7,8 @@ function Inicio() {
     return (
         <>
             <Dashboard/>
-            <Typography variant="h2">Pagina entrenamiento</Typography>
-            <ComandoVoz />
+            <Typography variant="h2" sx={{textAlign: 'center'}}>Pagina entrenamiento</Typography>
+            <ComandoVoz/>
         </>
     );
 }

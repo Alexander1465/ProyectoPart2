@@ -108,9 +108,9 @@ const ComandoVoz = ({setEjercicioFavorito, setCountdown}) => {
   
   console.log(message)
   return (
-    <div>
-      <button onClick={SpeechRecognition.startListening}>Start</button>
-      <button onClick={SpeechRecognition.stopListening}>Stop</button>
+    <div style={{textAlign: 'center', marginTop: '20px'}}>
+      <button style={{padding: '20px', paddingLeft: '40px', paddingRight: '40px'}} onClick={SpeechRecognition.startListening}>Start</button>
+      <button style={{padding: '20px', paddingLeft: '40px', paddingRight: '40px'}} onClick={SpeechRecognition.stopListening}>Stop</button>
       <p>{transcript}</p>
       <p>{message}</p>
       
